@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "224936511801",
+    "firebase_url": "https://sust-class-notifier2-default-rtdb.firebaseio.com",
+    "project_id": "sust-class-notifier2",
+    "storage_bucket": "sust-class-notifier2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224936511801:android:b71a74125288b8f46ec0e8",
+        "android_client_info": {
+          "package_name": "com.example.sustclassnotifier"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvxH0apASNTPVtI4MmRw9-Fu_2kF6Qt-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
