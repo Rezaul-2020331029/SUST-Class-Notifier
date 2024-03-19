@@ -29,9 +29,7 @@ fun CustomElevatedButton(
         shape = shape,
         modifier = modifier.sizeIn(minWidth = 96.dp, minHeight = 48.dp),
         enabled = enabled,
-        colors = ButtonDefaults.elevatedButtonColors(
-            contentColor = contentColor
-        )
+        colors = ButtonDefaults.buttonColors(Color.Yellow)
     ) {
         Text(
             text = text, style = ButtonStyle,

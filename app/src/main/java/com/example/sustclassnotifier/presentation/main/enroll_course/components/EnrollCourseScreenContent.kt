@@ -1,5 +1,6 @@
 package com.example.sustclassnotifier.presentation.main.enroll_course.components
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -9,6 +10,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import com.example.sustclassnotifier.components.CustomSwipeAbleLazyColumn
 import com.example.sustclassnotifier.components.TitleContainer
 import com.example.sustclassnotifier.data.model.User
@@ -28,7 +30,8 @@ fun EnrollCourseScreenContent(
     val alreadyEnrolledCourses by enrollCourseViewModel.alreadyEnrolled.collectAsState()
 
     Column (
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier.fillMaxSize()
+            .background(Color.Yellow),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         ClassMateTabRow(tab = TabItem.EnrollCourse)

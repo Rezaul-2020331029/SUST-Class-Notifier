@@ -23,6 +23,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.dp
 import com.example.sustclassnotifier.data.model.Course
 import com.example.sustclassnotifier.domain.event.HomeUIEvent
 import com.example.sustclassnotifier.navigation.Screen
@@ -118,7 +119,7 @@ fun CourseDisplay(
                         horizontalArrangement = Arrangement.SpaceEvenly,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Text(text = course.courseDepartment)
+
                         Text(text = course.courseCode)
                         Text(text = course.courseTitle)
                         Text(text = course.courseCredit.toString())
@@ -142,7 +143,8 @@ fun CourseDisplay(
             ) {
                 ElevatedCard(
                     modifier = Modifier
-                        .fillMaxSize(),
+                        .height(100.dp)
+                    ,
                     shape = LargeRounded
                 ) {
                     Row(
@@ -152,7 +154,7 @@ fun CourseDisplay(
                         horizontalArrangement = Arrangement.SpaceEvenly,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Text(text = course.courseDepartment)
+                       // Text(text = course.courseDepartment)
                         Text(text = course.courseCode)
                         Text(text = course.courseTitle)
                         Text(text = course.courseCredit.toString())

@@ -132,7 +132,7 @@ fun ProfileContent(profileViewModel: ProfileViewModel, user: User) {
             },
             shape = MediumRounded
         ) {
-            Text(text = if (editState) "Done" else "Edit")
+            Text(text = if (editState) "Ok" else "Update")
         }
     }
 

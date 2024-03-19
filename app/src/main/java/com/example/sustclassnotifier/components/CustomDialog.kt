@@ -1,5 +1,6 @@
 package com.example.sustclassnotifier.components
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.Card
@@ -7,6 +8,7 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
@@ -32,6 +34,7 @@ fun CustomDialog(
         ) {
             Column (
                 modifier = Modifier
+                    .background(Color.Magenta)
                     .fillMaxWidth(),
             ) {
                 content()

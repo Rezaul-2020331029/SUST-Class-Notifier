@@ -5,7 +5,6 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -28,7 +27,7 @@ import com.example.sustclassnotifier.ui.theme.NormalHeight
 import com.example.sustclassnotifier.ui.theme.SomeStyle
 
 @Composable
-fun TwoTitleContainer(
+fun TwoTitleContainer2(
     leftTitle: String,
     rightTitle: String,
     leftClick: () -> Unit,
@@ -36,7 +35,6 @@ fun TwoTitleContainer(
     modifier: Modifier = Modifier,
 ) {
     val isLeftSelected = rememberSaveable { mutableStateOf(true) }
-
 
     ElevatedCard(
         modifier = Modifier
@@ -51,10 +49,13 @@ fun TwoTitleContainer(
     ) {
         Row(
             modifier = Modifier
-                .height(400.dp),
+                .fillMaxWidth()
+                .height(400.dp)
+                .clickable {
+                    isLeftSelected.value = !isLeftSelected.value
+                },
             verticalAlignment = Alignment.CenterVertically
         ) {
-
             Row(
                 modifier = Modifier
                     .fillMaxHeight()
@@ -81,47 +82,9 @@ fun TwoTitleContainer(
                     } else {
                         MaterialTheme.colorScheme.primaryContainer
                     }
-                    )
-            }
-            VerticalDivider(color = Color.White, modifier = Modifier.height(NormalHeight))
-            Row(
-                modifier = Modifier
-                    .fillMaxHeight()
-                    .weight(1f)
-                    .background(
-                        if (!isLeftSelected.value) {
-                            MaterialTheme.colorScheme.onPrimaryContainer
-                        } else {
-                            MaterialTheme.colorScheme.primaryContainer
-                        }
-                    )
-                    .clickable {
-                        isLeftSelected.value = false
-                        rightClick()
-                    },
-                horizontalArrangement = Arrangement.Center,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    text = rightTitle,
-                    style = SomeStyle,
-                    color = if (isLeftSelected.value) {
-                        MaterialTheme.colorScheme.onPrimaryContainer
-                    } else {
-                        MaterialTheme.colorScheme.primaryContainer
-                    }
                 )
             }
         }
     }
 }
 
-@Preview(showBackground = true, showSystemUi = true)
-@Composable
-fun TwoTitleContainerPreview() {
-    TwoTitleContainer(
-        leftTitle = "Created Courses",
-        rightTitle = "Pending Courses",
-        leftClick = { /*TODO*/ },
-        rightClick = { /*TODO*/ })
-}

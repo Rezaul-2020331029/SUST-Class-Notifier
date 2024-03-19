@@ -2,6 +2,7 @@ package com.example.sustclassnotifier.presentation.main.create_semester.componen
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.shrinkHorizontally
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -88,11 +89,13 @@ fun DisplayCourse(
         ) {
             ElevatedCard(
                 modifier = Modifier
+                    .background(Color.Green)
                     .fillMaxSize(),
                 shape = LargeRounded
             ) {
                 Row(
                     modifier = Modifier
+                        .background(Color.Blue)
                         .clip(LargeRounded)
                         .fillMaxSize(),
                     horizontalArrangement = Arrangement.SpaceEvenly,

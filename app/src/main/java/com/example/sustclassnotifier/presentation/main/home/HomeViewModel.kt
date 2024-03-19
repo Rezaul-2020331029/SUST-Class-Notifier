@@ -252,6 +252,8 @@ class HomeViewModel @Inject constructor(
                 )
                 getPosts()
             }
+
+            else -> {}
         }
     }
 

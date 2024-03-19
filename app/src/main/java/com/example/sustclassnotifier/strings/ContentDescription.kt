@@ -1,7 +1,7 @@
 package com.example.sustclassnotifier.strings
 
 const val APP_LOGO = "App Logo"
-const val CLASSMATE_LOGO = "ClassMate Logo"
+const val CLASSMATE_LOGO = "SUST Logo"
 const val SHOW_PASSWORD_ICON = "Show Password"
 const val HIDE_PASSWORD_ICON = "Hide Password"
 const val GO_BACK_ICON = "Go Back"

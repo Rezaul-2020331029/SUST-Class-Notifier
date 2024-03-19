@@ -46,7 +46,7 @@ fun ClassMateSecondVersion() {
                     CreateSemesterScreen()
                 }
 
-                Screen.EnrollCourseScreen -> {
+               Screen.EnrollCourseScreen -> {
                     EnrollCourseScreen()
                 }
                 Screen.MenuScreen -> {
@@ -78,6 +78,8 @@ fun ClassMateSecondVersion() {
                 Screen.RoutineScreen -> {
                     RoutineScreen()
                 }
+
+                Screen.EnrollCourseScreen -> TODO()
             }
         }
     }

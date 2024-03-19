@@ -14,5 +14,5 @@ const val REQUESTED_COURSES = "requested_courses"
 
 // Roles
 const val TEACHER = "Teacher"
-const val CLASS_REPRESENTATIVE = "Class Representative"
+const val CLASS_REPRESENTATIVE = "CR"
 const val STUDENT = "Student"

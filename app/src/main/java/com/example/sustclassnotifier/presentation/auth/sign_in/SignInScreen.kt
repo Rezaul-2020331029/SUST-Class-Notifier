@@ -2,8 +2,10 @@ package com.example.sustclassnotifier.presentation.auth.sign_in
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
@@ -88,6 +90,8 @@ fun SignInScreen(
 //                        ClassMateAppRouter.navigateTo(Screen.ForgotPasswordScreen)
 //                    })
                 }
+                
+                Spacer(modifier = Modifier.height(20.dp))
 
 
                 Column(
