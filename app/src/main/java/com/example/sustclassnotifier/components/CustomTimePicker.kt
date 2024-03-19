@@ -24,6 +24,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -100,7 +101,7 @@ fun CustomTimePicker(
     ) {
         Text(
             text = title,
-            color = MaterialTheme.colorScheme.primary,
+            color = Color.Blue,
             fontSize = SmallPickerStyle.fontSize
         )
         Row(
@@ -176,7 +177,7 @@ fun CustomTimePicker(
                         },
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(text = PM, style = SmallPickerStyle, color = pmContentColor)
+                    Text(text = PM, style = SmallPickerStyle, color = Color.Blue)
                 }
             }
         }

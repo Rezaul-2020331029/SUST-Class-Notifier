@@ -88,7 +88,7 @@ fun CourseDisplay(
                 modifier = Modifier.size(ExtraSmallHeight)
             )
         },
-        background = Color.Green
+        background = Color.Cyan
     )
 
     if (isRequested) {

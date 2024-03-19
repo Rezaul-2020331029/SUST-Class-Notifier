@@ -32,8 +32,8 @@ fun BlackBoardContent(course: Course) {
             BlackboardRow(title = "Code", text = course.courseCode)
             BlackboardRow(title = "Title", text = course.courseTitle)
             BlackboardRow(title = "Credit", text = course.courseCredit.toString())
-            BlackboardRow(title = "Teacher", text = course.courseTeacher)
-            BlackboardRow(title = "Enrolled Students", text = course.enrolledStudents.size.toString())
+         //   BlackboardRow(title = "Teacher", text = course.courseTeacher)
+         //   BlackboardRow(title = "Enrolled Students", text = course.enrolledStudents.size.toString())
         }
     }
 }
